@@ -1,0 +1,49 @@
+/* styles.css */
+/* Barre de navigation fixe */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(214, 206, 206);
+}
+#nav {
+  background position: fixed; 
+  top: 0; 
+  width: 99%; 
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px; align-items: center;
+  font-family: fantasy;
+}
+
+section {
+  padding-top: 50px; /* Régle la hauteur en pixels de la barre de navigation */
+
+}
+
+.background-image {
+  background-size: cover; /* Pour couvrir toute la page */
+  background-position: center; /* Pour centrer l'image */
+  background-attachment: fixed; /* Fixe l'image de fond pour le défilement */
+  background-repeat: no-repeat; /* Pas de répétition de l'image de fond */
+  color: rgb(54, 54, 54);
+}
+
+nav {
+  background-color: rgb(30, 30, 30);
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+nav a {
+  color: darkgray;
+  text-decoration: none;
+}
+
+.gradient-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+  transition: background 1s ease;
+}

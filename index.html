@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>BTS SIO 1 - Malo DEVIC</title>
+        <link rel="stylesheet" href="./style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header>
+            <!-- Barre de navigation -->
+            <nav id="nav">
+                <a href="#Accueil" class="active">Accueil</a>
+                <a href="#Formations">Formations</a>
+                <a href="#Compétences">Compétences</a>
+                <a href="#Expériences">Expériences</a>
+                <a href="#Contact">Contact</a>
+                <a href="#APropos">A Propos</a>
+            </nav>
+        </header>
+
+        <main class="gradient-container" id="gradientContainer">
+            <!-- Contenu de la page Accueil -->
+            <section id="Accueil">
+                <h1>Accueil</h1>
+                    <p>Bonjour, bienvenue sur le site de Malo DEVIC ! 
+                        <br>
+                        <br>Bien sûr, vous pouvez surfer sur le site sans être perturbé par des cookies-vampires inutiles !
+                        <br>Bonne navigation (et cela se fait bien sûr, sans modération) !
+                    </p>
+            </section>
+
+            <!-- Contenu de la page Formations -->
+            <section id="Formations">
+                <h1>Formations</h1>
+                    <p>Ici se trouve mes formations !
+                        <li>Lycée technologique Charles Tellier</li>
+                        <br>Formation : STI2D (Sciences et Technologie de l'Industrie et du Développement Durable)
+                        <br>Date de début : Septembre 2021
+                        <br>Date de fin : Juin 2023
+                        <br>Lieu : Condé en Normandie
+                        <br>Contenu de la formation :
+			<br>
+			<br><li>IT-I2D : Spécialiés de la formation :
+			<br>
+			<br>Programmation en C# ;
+			<br>Mécanique (systèmes moto-réducteurs, fluides, ...) ;
+			<br>Electronique : Circuits imprimés, PWM, I2C, Watchdog) ;
+			<br>Le son, la compression ;
+			<hr>
+                    </p>
+            </section>
+
+            <!-- Contenu de la page Compétences -->
+            <section id="Compétences">
+                <h1><span id="Titre">Compétences</span></h1>
+                    <p>Et maintenant, un petit tour dans mes compétences !
+                        <br>
+                        <br>
+                        <br>Développement : ça passe
+                        <br>
+                        <br>Réseau : Se débrouille
+                        <br>
+                        <br>Informatique (maintenance de postes) : Autonome avec des erreurs
+                        <br>
+                        <br>langues étrangères :
+                            <li>Espagnol : A2+</li>
+                            <li>Anglais : B1</li>
+                    </p>
+                    <br>
+                    <P>
+                        Programmation :
+                        <br>
+                        <br>HTML : Débrouillard du moment que cela ne demande pas trop poussé
+                        <br>
+                        <br>CSS : Bof, simpliste mais reste passable
+                        <br>
+                        <br>SQL : Totalement dans le désert
+                        <br>
+                        <br>PHP : Cancre s'il n'y a pas Internet pour s'aider
+                    </P>
+            </section>
+
+            <!-- Contenu de la page Expériences -->
+            <section id="Expériences">
+                <h1>Expériences</h1>
+                <p>Ah, vous préférez mes experiences personnels ?</p>
+                <br>
+                <a href="CV.pdf" download="./CV.pdf">CV à télécharger</a>
+                <br>
+                        <br><li>Normandise Pet Food :</li>
+                        <br>
+                        Poste : Technicien Informatique Alternant
+                        <br>
+                        <br>
+                        Date de début : 25 Septembre 2023
+                        <br>
+                        <br>
+                        Date de fin : N/A
+                        <br>
+                        <br>
+                        Lieu : Vire-Normandie
+                        <br>
+                        <br>
+                        Tâches :
+                        <br>
+                        <br>
+                            <li>déploiement de postes Informatiques</li>
+                            <br>
+                            <li>déploiement de DECT (téléphones portables)</li>
+                            <br>
+                            <li>assistance par tickets (GLPI)</li>
+                            <br>
+                            <li>assistance à distance</li>
+                            </li>
+            </section>
+
+            <!-- Contenu de la page Contact -->
+            <section id="Contact">
+                <h1>Contact</h1>
+                <p>Un petit message ?</p>
+                <form action="./Mail.php" method="post">
+                    <label for="nom"><span id="label">Nom :</span></label>
+                    <input type="text" id="nom" name="nom" required>
+                    <br>
+                    <br>
+                    <label for="email"><span id="label">E-Mail :</span></label>
+                    <input type="email" id="email" name="email" required>
+                    <br>
+                    <br>
+                    <label for="objet"><span id="label">Objet :</span></label>
+                    <input type="text" id="objet" name="objet" required>
+                    <br>
+                    <br>
+                    <label for="message"><span id="label">Message :</span></label>
+                    <textarea id="message" name="message" required></textarea>
+                    <br>
+                    <br>
+                    <input type="submit" value="Envoyer">
+                </form>
+            </section>
+            <!-- Contenu de la page A Propos -->
+            <section id="APropos">
+                <h1>A Propos</h1>
+                    <p>Quelques infos sur le site, rien de bien utile ...
+                        <br>
+                        <br>
+                        <br>Bonjour, je m'appelle Malo DEVIC et j'ai 18 ans.
+                        <br>
+                        <br>Mes hobbies sont l'informatique, les jeux-vidéos et la photographie.
+                        <br>
+                        <br>J'aime le ski, les voitures et les animaux et je n'aime pas les brocolis.
+                    </p>
+            </section>
+        </main>
+        <script async defer src="script.js">
+            function showPage(pageId) {
+                // Masquer toutes les sections
+                var sections = document.querySelectorAll('section');
+                sections.forEach(function (section) {
+                    section.style.display = 'none';
+                });
+        
+                // Afficher la section sélectionnée
+                var selectedSection = document.getElementById(pageId);
+                if (selectedSection) {
+                    selectedSection.style.display = 'block';
+                }
+            }
+        
+            // Afficher la première section (Accueil) au chargement de la page
+            showPage('Accueil');
+        
+            // Récupérer les liens de navigation
+            var navLinks = document.querySelectorAll('nav a');
+        
+            // Associer un événement de clic à chaque lien de navigation
+            navLinks.forEach(function (link) {
+                link.addEventListener('click', function (e) {
+                    e.preventDefault(); // Empêcher le comportement de lien par défaut
+                    var targetId = this.getAttribute('href').substring(1);
+                    showPage(targetId);
+                });
+            });
+        </script>
+    </body>
+
+</html>
